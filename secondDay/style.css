@@ -1,0 +1,50 @@
+body,html {
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+video {
+    z-index: -1;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    opacity: .7;
+    position: absolute;
+}
+
+.clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.clock-fase {
+    width: 500px;
+    height: 500px;
+    padding: 15px;
+    background: transparent;
+    border: 6px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+}
+.hand {
+    width: 47%;
+    height: 5px;
+    background: #000;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all .5s;
+}

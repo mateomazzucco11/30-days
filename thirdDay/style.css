@@ -1,0 +1,41 @@
+:root {
+    --base: red;
+    --spacing: 2px;
+    --blur: 5px;
+}
+
+* { 
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.controls {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+label,input {
+    width: 100%;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+img {
+    padding: var(--spacing);
+    background: var(--base);
+    filter:blur(var(--blur));
+    object-fit: cover;
+    width: 100%;
+    height: 94.5%;
+}
+
+label {
+    color: var(--base);
+}
